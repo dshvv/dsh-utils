@@ -1,8 +1,8 @@
 {
   "name": "dsh-utils",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "常用的工具类",
-  "main": "bundle.js",
+  "main": "./dist/bundle.js",
   "scripts": {
     "build": "rollup -c"
   },
@@ -16,8 +16,5 @@
   "bugs": {
     "url": "https://github.com/dshvv/dsh-utils/issues"
   },
-  "homepage": "https://github.com/dshvv/dsh-utils#readme",
-  "devDependencies": {
-    "rollup-plugin-require-context": "^1.0.1"
-  }
+  "homepage": "https://github.com/dshvv/dsh-utils#readme"
 }
