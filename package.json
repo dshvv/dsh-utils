@@ -1,6 +1,6 @@
 {
   "name": "dsh-utils",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "常用的工具类",
   "main": "./bundles/bundle.js",
   "scripts": {
