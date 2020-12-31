@@ -1,0 +1,23 @@
+{
+  "name": "dsh-utils",
+  "version": "1.0.0",
+  "description": "常用的工具类",
+  "main": "bundle.js",
+  "scripts": {
+    "build": "rollup -c"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dshvv/dsh-utils.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dshvv/dsh-utils/issues"
+  },
+  "homepage": "https://github.com/dshvv/dsh-utils#readme",
+  "devDependencies": {
+    "rollup-plugin-require-context": "^1.0.1"
+  }
+}
