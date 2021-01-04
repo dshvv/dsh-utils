@@ -14,7 +14,7 @@ export const getArrAdj = (param) => {
         // 如果到达边界
         if (currentIndex && currentIndex === arr.length - 1) {
             // 循环，则下一个是数组的起点元素
-            return circular?arr[0]: false;
+            return circular ? arr[0] : false;
         } else {
             return arr[currentIndex + 1]
         }
@@ -22,7 +22,7 @@ export const getArrAdj = (param) => {
         // 如果到达边界
         if (currentIndex === 0) {
             // 循环，则下一个是数组的终点元素
-            return circular?arr[arr.length - 1]:false;
+            return circular ? arr[arr.length - 1] : false;
         } else {
             return arr[currentIndex - 1]
         }
@@ -37,14 +37,16 @@ export const getArrAdj = (param) => {
 export const isLeftSlide = (params) => {
     let { arr, oldIndex, newIndex, oldVal, newVal } = params;
     // 如果没有传递索引，从arr+val来取到索引(val仅支持基本类型)
-    if (!oldIndex) {
-        oldIndex = arr.findIndex(item => item === oldVal)
-        newIndex = arr.findIndex(item => item === newVal)
+    if (oldIndex === '' || oldIndex == null) {
+        oldIndex = arr.findIndex(item => item === oldVal);
+        newIndex = arr.findIndex(item => item === newVal);
     }
     // 除了末尾的下一个是第一个，其余的均是比较新旧索引
     if (oldIndex === arr.length - 1) {
         return newIndex === 0
+    } else if (oldIndex === 0) {
+        return newIndex !== 2
     } else {
         return newIndex > oldIndex
     }
-}
+};
