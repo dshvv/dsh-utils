@@ -1,8 +1,8 @@
 {
   "name": "dsh-utils",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "常用的工具类",
-  "main": "./bundles/bundle.js",
+  "main": "lib/bundle.js",
   "typings": "types/index.d.ts",
   "scripts": {
     "build": "rollup -c"

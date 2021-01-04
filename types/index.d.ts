@@ -1,15 +1,36 @@
 
 interface getArrAdjParams {
-	arr: Array<any>; // 数组
-	type: string; // next/prev  上一个或者下一个
-	currentIndex: Number;// 当前激活的元素索引 与 currentItem组成可选
-	currentItem: any;// 当前激活的元素
-	circular: boolean; // 是否闭环取值，还是循环取值
+	/** 数据源 */
+	arr: Array<any>;
+	/** next or prev  上一个或者下一个 */
+	type: string; 
+	/** 当前激活的元素索引 与 currentItem组成可选 */
+	currentIndex: Number;
+	/** 当前激活的元素 */
+	currentItem: any;
+	/** 是否闭环取值，还是循环取值素 */
+	circular: boolean;
+}
+
+interface isLeftSlideParams {
+	/** 数据源 */
+ 	arr: Array<any>;
+	/** 当前激活的元素索引 与 oldVal组成可选, */
+	oldIndex: Number;
+	/** 当前激活的元素索引 与 newVal组成可选 */
+	newIndex: Number;
+	/** 当前激活的元素 */
+	oldVal: any;
+	/** 即将激活的元素 */
+	newVal: any;
 }
 
 
 declare module DshUtils {
+	/** 查找数组的上一个或者下一个元素 */
 	function getArrAdj(params: getArrAdjParams): any
+	/** Swiper循环的数组中，根据当前active和下一个的index判断是否向左滑动 **/
+	function isLeftSlide(params: isLeftSlideParams): any
 }
 
 
