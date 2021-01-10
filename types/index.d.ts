@@ -31,6 +31,8 @@ declare module DshUtils {
 	function getArrAdj(params: getArrAdjParams): any
 	/** Swiper循环的数组中，根据当前active和下一个的index判断是否向左滑动 **/
 	function isLeftSlide(params: isLeftSlideParams): any
+	/** 根据开始时间-结束时间， 以及间隔分钟。返回一个间隔时间点的数组 **/
+	function getDateArray(startDate: any, endDate: any, space: number): any
 }
 
 

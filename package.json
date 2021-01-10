@@ -1,6 +1,6 @@
 {
   "name": "dsh-utils",
-  "version": "1.0.6",
+  "version": "1.0.8",
   "description": "常用的工具类",
   "main": "lib/bundle.js",
   "typings": "types/index.d.ts",
