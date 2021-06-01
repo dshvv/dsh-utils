@@ -33,6 +33,10 @@ declare module DshUtils {
 	function isLeftSlide(params: isLeftSlideParams): any
 	/** 根据开始时间-结束时间， 以及间隔分钟。返回一个间隔时间点的数组 **/
 	function getDateArray(startDate: any, endDate: any, space: number): any
+	/** 判断是否json **/
+	function isJson(params: any): any
+	/** 判断是否json字符串 **/
+	function isJsonStr(params: string): any
 }
 
 

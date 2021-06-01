@@ -19,6 +19,6 @@ export const isJsonStr = (str) => {
 export const isJson = (data) => {
     const typeofRes = typeof (data) == "object";
     const toStringRes = Object.prototype.toString.call(data).toLowerCase() == "[object object]";
-    const isLen = !data?.length;
+    const isLen = !(data && data.length);
     return typeofRes && toStringRes && isLen;
 }
